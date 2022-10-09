@@ -1,0 +1,7 @@
+Pacotes node usados no projeto:
+- express
+- http
+- multer
+- fs
+- sqlite3
+- body-parser

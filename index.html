@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SubSolo</title>
+    <link rel="shortcut icon" href="img/cartas.ico" type="image/x-icon" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Nunito:wght@200;300;400;600&family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <!-- CSS do Projeto -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Javascript Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+      <div class="container py-3">
+        <a class="navbar-brand primary-color" href="#">
+          <img src="img/cartas.ico" alt="ArqMovi" />
+          <span>SubSolo</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-items"
+          aria-controls="navbar-items"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link primary-color"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link primary-color" href="#footer">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link primary-color" href="imoveis">Todos os Imóveis</a>
+            </li>
+          </ul>
+          
+            <a class="nav-brand primary-color" href="login.html">
+              <img src="img/login-index.png"/>
+            </a>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <section class="container" id="slider-container">
+      <div id="slider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner-1.jpg" class="d-block w-100" alt="Casa 1" />
+            <div class="carousel-caption">
+              <h5>Conheça o melhor imóvel para você</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner-2.jpg" class="d-block w-100" alt="Casa 2" />
+            <div class="carousel-caption">
+              <h5>Alugar seu imóvel e ter um cantinho só seu</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner-3.jpg" class="d-block w-100" alt="Casa 3" />
+            <div class="carousel-caption">
+              <h5>Preço que cabe no seu bolso</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev"
+        >
+          <i class="bi bi-chevron-compact-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next">
+          <i class="bi bi-chevron-compact-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Destaques -->
+    <section class="container" id="featured-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Imóveis</h2>
+        <p class="subtitle secondary-color">
+          Conheça algumas das casas presentes no site
+        </p>
+      </div>
+      <div class="col-12" id="featured-images">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <img src="img/project-01.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-02.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-03.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-04.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-05.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/project-06.jpg" alt="Projeto 1" class="img-fluid" />
+            <div class="banner-content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Info -->
+    <section class="container" id="info-container">
+      <div class="col-12">
+        <h2 class="title primary-color">Sobre a SubSolo</h2>
+        <p class="subtitle secondary-color">
+          Alguns detalhes sobre nossa imobiliária
+        </p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-md-5" id="info-banner">
+            <img
+              src="img/infobanner.jpg"
+              alt="Informações da Empresa"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title primary-color">
+                  Alguns detalhes sobre a SubSolo
+                </h2>
+                <p class="subtitle secondary-color">
+                  O que começou com uma startup idealizada numa mesa de bar por alunos de Ciência da Computação, hoje se consagra como 
+                  uma das maiores do mercado imobiliário.
+                </p>
+              </div>
+              <div class="col-12" id="info-numbers">
+                <div class="row">
+                  <div class="col-4">
+                    <h3 class="primary-color">8</h3>
+                    <p class="secondary-color">Anos na construção civil</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">26</h3>
+                    <p class="secondary-color">estados</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="primary-color">342</h3>
+                    <p class="secondary-color">Clientes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark-color" id="footer">
+      <div class="container">
+        <div class="row">
+          <!-- footer top -->
+          <div class="col-12" id="footer-top">
+            <div class="row justify-content-between">
+              <div class="col-4"><h2>SubSolo</h2></div>
+              <div class="col-4" id="social-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Details -->
+              <div class="col-12 col-md-4" id="contact-container">
+                <h4>Formas de contato</h4>
+                <p class="secondary-color">(11) 9 9999-99999</p>
+                <p class="secondary-color">contato@subsolo.com</p>
+              </div>
+              
+            </div>
+          </div>
+          <!-- Footer bottom -->
+          <div class="col-12" id="footer-bottom">
+            <div class="row justify-content-between">
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">SubSolo &copy; 2022
+                </p>
+              </div>
+              <div class="col-12 col-md-3">
+                <p class="secondary-color">Encontramos sua casa
+                  <i class="bi bi-heart"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
